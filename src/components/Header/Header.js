@@ -1,55 +1,68 @@
-import React, { Component } from "react";
-import "./Header.css";
+import React from 'react'
+import { Button, Form, FormControl, Nav, Navbar, NavDropdown, } from "react-bootstrap";
+import './Header.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, NavLink, withRouter } from 'react-router-dom';
+
 import HomeIcon from '@material-ui/icons/Home';
-import MenuIcon from '@material-ui/icons/Menu';
-import { Link, withRouter} from "react-router-dom";
-import "./Header.css";
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+// import Resume from "../../pages/Resume/Resume";
+
+function Header(props) {
+     const pathName = props?.location?.pathname;
 
 
-class Navbar extends Component {
+     return (
+          <Navbar expand="lg" sticky="top" className="header">
+               {/* Home link */}
+               <Nav.Link as={NavLink} to="/">
+                    <Navbar.Brand className="header_home">
+                    <HomeIcon/>
+                    </Navbar.Brand> 
+               </Nav.Link>
 
-     render() {
+               <Navbar.Toggle/>
 
-          return(
+               <Navbar.Collapse>
+                    <Nav className="header-left">
+                    {/* Resume Link */}
+                      <Nav.Link as={NavLink} to='/' className={pathName == '/' ? "header_link_active" : "header_link"}>
+                      Resume
+                      </Nav.Link>   
 
-               <nav className="NavbarItems">
-                    <h1 className="navbar-logo">Home</h1>
-                    <div className="menu-icon">
+                      {/* Portfolio Link */}
+                      <Nav.Link as={NavLink} to='/portfolio' className={pathName == '/portfolio' ? "header_link_active" : "header_link"}>
+                      Portfolio
+                      </Nav.Link>  
+
+                    {/* Contact Link */}
+                      <Nav.Link as={NavLink} to='/contact' className={pathName == '/contact' ? "header_link_active" : "header_link"}>
+                      Contact
+                      </Nav.Link>  
+
+                    </Nav>
+
+                    <div className="header-right">
+                         
+                         <Link
+                className="social-icons"
+                to="https://twitter.com/home?lang=en"
+                target="_blank"><TwitterIcon/></Link>
+                     <Link
+                className="social-icons"
+                to="www.linkedin.com/in/aaron-moua"
+                target="_blank"><LinkedInIcon/></Link>
+                     <Link
+                className="social-icons"
+                to="https://github.com/amoua000"
+                target="_blank"><GitHubIcon/></Link>
                          
                     </div>
-                    <HomeIcon/> 
-               </nav>
-          )
-
-
-
-     }
+               </Navbar.Collapse>
+          </Navbar>
+     )
 }
 
-
-
-return (
-     <>
-       <Nav>
-         <NavLink  to="/">
-          <HomeIcon/>
-         </NavLink>
-         <MenuIcon/>
- 
-         <NavMenu>
-           <NavLink  to="/resume" activeStyle>
-             Resume
-           </NavLink>
-           <NavLink  to="/portfolio" activeStyle>
-             Portfolio
-           </NavLink>
-           <NavLink   to="/contact" activeStyle>
-             Contact
-           </NavLink>
-      </NavMenu>
-            
- 
-       </Nav>
-     </>
-   );
- };
+export default Header
