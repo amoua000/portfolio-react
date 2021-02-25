@@ -24,7 +24,7 @@
 }
 
 .header .header_home {
-          background-color: rgb(192, 192, 253);
+          background-color: rgb(217, 237, 255);
           padding: 22px;
           display: flex;
           justify-content: center;
@@ -32,6 +32,10 @@
           border-top-left-radius: inherit;
           border-bottom-left-radius: inherit;
           
+}
+
+.header .header_home > #home-icon:hover{
+          color:rgb(2, 62, 193);
 }
 
 .header .header-left{

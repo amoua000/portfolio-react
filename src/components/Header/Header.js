@@ -19,7 +19,7 @@ function Header(props) {
                {/* Home link */}
                <Nav.Link as={NavLink} to="/">
                     <Navbar.Brand className="header_home">
-                    <HomeIcon/>
+                    <HomeIcon id="home-icon" />
                     </Navbar.Brand> 
                </Nav.Link>
 
