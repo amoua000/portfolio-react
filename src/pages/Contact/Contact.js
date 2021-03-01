@@ -28,7 +28,7 @@ const Contact = () => {
               <Grid item xs={12} >
                 <TextField fullWidth name="name" label="name" />
               </Grid>
-              <button className="contact-button" text="Submit" value="Send" >Subtmit</button>
+              <button className="contact-button" text="Submit" value="Send" >Submit</button>
             </Grid>
           </Grid>
         </Grid>
