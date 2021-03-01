@@ -96,7 +96,7 @@ export default {
       ],
     },
     {
-      tag: "html,css",
+      tag: "html, css",
       image: [reservation],
       title: " Reservation Page",
       caption: "This is my Reservation Page made with Html & Css",
