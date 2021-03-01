@@ -1,0 +1,8 @@
+.contact-button {
+          width: 100px;
+          height: 50px;
+          font-size: 1.5rem;
+          z-index: 1;
+          color: rgb(19, 15, 15);
+          cursor: pointer;
+}

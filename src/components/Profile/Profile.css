@@ -11,7 +11,6 @@
 }
 
 .profile-name h1 {
-          text-transform: uppercase;
           font-size: 20px;
           font-weight: bold;
           text-align: center;
@@ -29,11 +28,13 @@ margin-left:1px;
 }
 
 .profile-pic img {
+          padding: 5px;
           width:100%;
-          border-radius: 25% 10%;
+          
 }
 
 .profile-info p {
+          padding: 5px;
           font-size:15px ;
           text-align: center;
 }
@@ -41,4 +42,16 @@ margin-left:1px;
 .profile-info H1 {
           font-size: 20px;
           text-align: center;
+}
+
+.language-icons {
+          display: flex;
+
+          
+}         
+.language-icons img {
+          margin-left: 1px;
+          padding:5px;
+          width:16%;
+        
 }

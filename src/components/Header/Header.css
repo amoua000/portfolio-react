@@ -15,7 +15,7 @@
 }
 
 .header .header_link:hover{
-          color: var(--main-color)!important;
+          color: rgba(2, 62, 193) !important;
 } 
 
 .header .header_link_active {
@@ -24,18 +24,18 @@
 }
 
 .header .header_home {
-          background-color: rgb(217, 237, 255);
-          padding: 22px;
+          background-color: rgb(125, 191, 249);
+          padding: 20px;
           display: flex;
           justify-content: center;
           align-items: center;
-          border-top-left-radius: inherit;
-          border-bottom-left-radius: inherit;
+          border-top-left-radius:6px;
+          border-bottom-left-radius:6px;
           
 }
 
 .header .header_home > #home-icon:hover{
-          color:rgb(2, 62, 193);
+          color:rgb(16, 72, 193);
 }
 
 .header .header-left{
@@ -49,5 +49,21 @@
 }
 
 .header .header-right .social-icons {
-          margin-right:12px
+          margin-right:12px;
+}
+
+ #person-icon {
+          margin-top: 8px;
+          padding: 2px;
+          width: 2rem !important;
+}
+
+.header .header-right .social-button > #download-icon {
+          margin-top: 11px;
+          padding: 2px;
+          width: 1.5rem !important;
+}
+
+.header .header-right .social-button h2 {
+          font-size: 8px;
 }

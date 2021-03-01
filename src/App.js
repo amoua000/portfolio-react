@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
+import Contact from "./pages/Contact/Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
@@ -33,6 +34,13 @@ function App() {
               <Resume />
             </Route>
             </Switch>
+
+            <Switch>
+            <Route exact path="/contact">
+              <Contact />
+            </Route>
+            </Switch>
+
 
           </Router>
 

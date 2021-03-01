@@ -1,6 +1,32 @@
 
 .top_60 {
+
   margin-top: 60px !important;
+}
+
+.top_30 {
+  margin-top: 30px !important;
+
+}
+
+.mb_30 {
+  margin-bottom: 30px !important;
+}
+
+.mb_20 {
+  margin-bottom: 20px !important;
+}
+
+.p_30 {
+  padding: 30px !important;
+}
+
+.pt_45 {
+  padding-top: 45px !important;
+}
+
+.pb_45 {
+  padding-bottom: 45px!important;
 }
 
 @media (max-width: 991px ) {
